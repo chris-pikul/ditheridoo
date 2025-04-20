@@ -1,0 +1,8 @@
+#app-settings {
+    grid-area: settings;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    gap: var(--size-1);
+}

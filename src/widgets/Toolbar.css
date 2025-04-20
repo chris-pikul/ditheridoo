@@ -1,0 +1,9 @@
+#app-toolbar {
+    grid-area: toolbar;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: var(--size-1);
+}
