@@ -1,0 +1,78 @@
+:root {
+    --shade-4: #000;
+    --shade-3: #222;
+    --shade-2: #555;
+    --shade-1: #999;
+    --shade-0: #fff;
+
+    --size-0: 8px;
+    --size-1: 16px;
+    --size-2: 24px;
+    --size-3: 32px;
+    --size-4: 40px;
+    --size-5: 48px;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --shade-0: #000;
+        --shade-1: #222;
+        --shade-2: #555;
+        --shade-3: #999;
+        --shade-4: #fff;
+    }
+}
+
+html {
+    width: 100%;
+    width: 100dvw;
+    height: 100%;
+    height: 100dvh;
+
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+
+    background: var(--shade-0);
+    color: var(--shade-4);
+}
+body {
+    width: 100%;
+    min-height: 100dvh;
+    padding: var(--size-1);
+}
+body,
+body * {
+    box-sizing: border-box;
+}
+
+.doto {
+    font-family: 'Doto', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 'ROND' 0;
+}
+
+.vt323 {
+    font-family: 'VT323', monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.typo-small {
+    font-size: 12px;
+    line-height: var(--size-1);
+}
+.typo-normal {
+    font-size: 16px;
+    line-height: var(--size-2);
+}
+.typo-emphasis {
+    font-size: 20px;
+    line-height: var(--size-2);
+}
+.typo-large {
+    font-size: 28px;
+    line-height: var(--size-3);
+}

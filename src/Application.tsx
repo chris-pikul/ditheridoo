@@ -1,3 +1,9 @@
+import Header from './widgets/Header';
+
 export function Application() {
-    return <h1>Hello, World!</h1>;
+    return (
+        <>
+            <Header />
+        </>
+    );
 }
