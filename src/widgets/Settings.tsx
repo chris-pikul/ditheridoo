@@ -1,9 +1,6 @@
+import { Section } from '../components/Section';
 import './Settings.css';
 
 export default function Settings() {
-    return (
-        <aside id='app-settings' className='boxed'>
-            Settings
-        </aside>
-    );
+    return <Section id='app-settings' title='Settings'></Section>;
 }

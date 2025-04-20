@@ -49,11 +49,19 @@ body * {
     display: grid;
     grid-template-areas: 'header toolbar' 'settings input' 'settings output' 'footer footer';
     grid-template-rows: var(--size-3) 1fr 1fr var(--size-3);
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: minmax(20rem, 1fr) 3fr;
     gap: var(--size-1);
     width: 100%;
     min-height: 100dvh;
     padding: var(--size-1);
+}
+
+@media screen and (max-width: 860px) {
+    #root {
+        grid-template-areas: 'header toolbar' 'settings settings' 'input input' 'output output' 'footer footer';
+        grid-template-rows: var(--size-3) auto 1fr 1fr var(--size-3);
+        grid-template-columns: minmax(15rem, 1fr) 3fr;
+    }
 }
 
 .doto {
