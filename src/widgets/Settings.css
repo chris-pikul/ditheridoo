@@ -1,3 +1,10 @@
 #app-settings {
     grid-area: settings;
+
+    & > .section-content {
+        display: flex;
+        flex-flow: column;
+        align-items: stretch;
+        gap: var(--size-2);
+    }
 }
