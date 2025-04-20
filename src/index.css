@@ -32,6 +32,7 @@ html {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
+    font-stretch: expanded;
 
     background: var(--shade-0);
     color: var(--shade-4);
@@ -76,6 +77,7 @@ body * {
     font-family: 'VT323', monospace;
     font-weight: 400;
     font-style: normal;
+    font-stretch: expanded;
 }
 
 .typo-small {

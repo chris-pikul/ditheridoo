@@ -1,0 +1,18 @@
+.labeled {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: var(--size-0);
+
+    .labeled-title {
+        font-stretch: ultra-expanded;
+        letter-spacing: 0.25ch;
+        color: var(--shade-3);
+    }
+
+    &:has(:focus) .labeled-title,
+    &:has(:hover) .labeled-title {
+        color: var(--shade-4);
+    }
+}

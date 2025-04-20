@@ -2,7 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     align-items: stretch;
-    gap: var(--size-0);
+    gap: 0;
 
     border: 1px solid var(--shade-1);
 
